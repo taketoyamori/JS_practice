@@ -127,39 +127,7 @@ function getJShand(){
   return js_hand;
 }
 
-// 勝敗比較の関数
 
-function winlose(user, js){
-  var winLoseStr;
-
-  if(user == "グー"){
-    if(js == "グー"){
-      winLoseStr = "あいこ";
-    } else if(js == "チョキ"){
-      winLoserStr = "勝ち";
-    } else if(js == "パー"){
-      winLoserStr = "負け";
-    }
-  } else if(user == "チョキ"){
-    if(js == "グー"){
-      winLoseStr = "負け";
-    } else if(js == "チョキ"){
-      winLoserStr = "あいこ";
-    } else if(js == "パー"){
-      winLoserStr = "勝ち";
-    }
-  }　else if(user == "パー"){
-    if(js == "グー"){
-      winLoseStr = "勝ち";
-    } else if(js == "チョキ"){
-      winLoserStr = "負け";
-    } else if(js == "パー"){
-      winLoserStr = "あいこ";
-    }
-  }
-
-  return winLoseStr;
-}
 
 
 
